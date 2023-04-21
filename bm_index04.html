@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>公司名字 - 首页</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css">
+  <style>
+    /* 根据需要设置自定义样式 */
+    /* 把logo图标调整为白色 */
+    .logo {
+      filter: brightness(0) invert(1)
+    }
+
+    .header p {
+      font-size: 75px;
+    }
+
+    .img-rounded {
+      -webkit-mask-image: radial-gradient(circle, white 100%, black 100%);
+      mask-image: radial-gradient(circle, white 100%, black 100%);
+    }
+
+    /* .header-bg {
+      background-image: url('/images/yuanjing.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    } */
+  </style>
+</head>
+
+<body>
+  <!-- 导航栏 -->
+  <nav class="bg-gray-900 text-white">
+    <div class="container mx-auto flex justify-between px-4 py-2">
+      <div class="flex items-center">
+        <img src="images/logo.png" alt="公司logo" class="w-12 h-auto logo">
+        <h1 class="text-xl ml-4 font-semibold">公司名字</h1>
+      </div>
+      <ul class="flex items-center">
+        <li class="mr-6"><a href="#" class="hover:text-gray-400">首页</a></li>
+        <li class="mr-6"><a href="#" class="hover:text-gray-400">服务</a></li>
+        <li class="mr-6"><a href="#" class="hover:text-gray-400">团队</a></li>
+        <li class="mr-6"><a href="#" class="hover:text-gray-400">联系我们</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- 公司愿景 -->
+  <div class="header flex flex-col items-center justify-center relative">
+    <p
+      class="text-lg mb-2 font-bold absolute text-white top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1 whitespace-nowrap">
+      使用 boardmix AI 创建一个网站</br>
+    </p>
+
+    <img src="images/yuanjing.png" alt="公司愿景" class="w-full filter brightness-30" user-select="false">
+  </div>
+
+
+  <!-- <div class="header flex flex-col items-center justify-center header-bg bg-green-600">
+    <p class="text-lg mb-2 font-bold absolute text-white">
+      公司愿景</p>
+  </div> -->
+
+  <!-- 公司简介 -->
+  <section class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+      <h2 class="text-2xl font-semibold mb-4">公司简介</h2>
+      <div class="md:flex">
+        <img src="images/company.jpg" alt="公司照片" class="md:w-1/2 md:pr-8 mb-4">
+        <p class="md:w-1/2 leading-loose text-gray-600">
+          这里是公司名字，我们专注于提供优质的服务，为客户创造最大的价值。我们有一支优秀的团队，能够为您提供最专业的解决方案。如有需要，请随时联系我们。</p>
+      </div>
+    </div>
+  </section>
+  <!-- 提供的服务 -->
+  <section class="bg-white">
+    <div class="container mx-auto px-4 py-8">
+      <h2 class="text-2xl font-semibold mb-4">提供的服务</h2>
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <li class="bg-gray-200 py-4 px-6 rounded-lg">
+          <img src="/images/services1.jpg" alt="" class="mb-8">
+          <h3 class="text-lg font-medium mb-2">服务1</h3>
+          <p class="text-gray-600">这里是服务1的介绍，介绍服务的特点和优势等等。</p>
+        </li>
+        <li class="bg-gray-200 py-4 px-6 rounded-lg">
+          <img src="/images/services2.jpg" alt="" class="mb-8">
+          <h3 class="text-lg font-medium mb-2">服务2</h3>
+          <p class="text-gray-600">这里是服务2的介绍，介绍服务的特点和优势等等。</p>
+        </li>
+        <li class="bg-gray-200 py-4 px-6 rounded-lg">
+          <img src="/images/services3.jpg" alt="" class="mb-8 w-full object-cover">
+          <h3 class="text-lg font-medium mb-2">服务3</h3>
+          <p class="text-gray-600">这里是服务3的介绍，介绍服务的特点和优势等等。</p>
+        </li>
+        <li class="bg-gray-200 py-4 px-6 rounded-lg">
+          <img src="/images/services1.jpg" alt="" class="mb-8">
+          <h3 class="text-lg font-medium mb-2">服务4</h3>
+          <p class="text-gray-600">这里是服务4的介绍，介绍服务的特点和优势等等。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- 团队介绍 -->
+  <section class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+      <h2 class="text-2xl font-semibold mb-8">团队介绍</h2>
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <li>
+          <div class="w-64 h-64 relative">
+            <img src="/images/team1.jpg" alt="团队成员1" class="mb-4 absolute w-full h-full object-cover rounded-full">
+          </div>
+          <h3 class="text-lg font-medium mt-10 mb-2">团队成员1</h3>
+          <p class="text-gray-600">这里是团队成员1的介绍，包括工作职责、专业领域等等。</p>
+        </li>
+        <li>
+          <div class="w-64 h-64 relative">
+            <img src="/images/team2.jpg" alt="团队成员1" class="mb-4 absolute w-full h-full object-cover rounded-full">
+          </div>
+          <h3 class="text-lg font-medium mt-10 mb-2">团队成员2</h3>
+          <p class="text-gray-600">这里是团队成员2的介绍，包括工作职责、专业领域等等。</p>
+        </li>
+        <li>
+          <div class="w-64 h-64 relative">
+            <img src="/images/team3.jpg" alt="团队成员1" class="mb-4 absolute w-full h-full object-cover rounded-full">
+          </div>
+          <h3 class="text-lg font-medium mt-10 mb-2">团队成员3</h3>
+          <p class="text-gray-600">这里是团队成员3的介绍，包括工作职责、专业领域等等。</p>
+        </li>
+        <li>
+          <div class="w-64 h-64 relative">
+            <img src="/images/team4.jpg" alt="团队成员1" class="mb-4 absolute w-full h-full object-cover rounded-full">
+          </div>
+          <h3 class="text-lg font-medium mt-10 mb-2">团队成员4</h3>
+          <p class="text-gray-600">这里是团队成员4的介绍，包括工作职责、专业领域等等。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- 联系我们 -->
+  <section class="bg-white">
+    <div class="container mx-auto px-4 py-8">
+      <h2 class="text-2xl font-semibold mb-4">联系我们</h2>
+      <p class="text-gray-600 mb-8">如果您对我们的服务有任何疑问或意见，欢迎联系我们，或者填写下面的表单，留下您的信息，我们会尽快与您联系。</p>
+      <form>
+        <div class="mb-4">
+          <label class="block text-gray-700 font-medium mb-2" for="name">姓名</label>
+          <input class="appearance-none border border-gray-400 rounded-lg py-2 px-4 w-full" id="name" type="text"
+            placeholder="请输入您的姓名">
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 font-medium mb-2" for="email">邮箱</label>
+          <input class="appearance-none border border-gray-400 rounded-lg py-2 px-4 w-full" id="email" type="email"
+            placeholder="请输入您的邮箱">
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 font-medium mb-2" for="message">留言</label>
+          <textarea class="appearance-none border border-gray-400 rounded-lg py-4 px-4 w-full" id="message"
+            placeholder="请输入留言内容"></textarea>
+        </div>
+        <div class="mb-4">
+          <button class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600" type="submit">提交</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- 友情链接 -->
+  <section class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+      <h2 class="text-2xl font-semibold mb-4">友情链接</h2>
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <li><a href="https://boardmix.cn">boardmix博思白板</a></li>
+        <li><a href="https://pixso.cn">Pixso协同设计</a></li>
+        <li><a href="#">友情链接3</a></li>
+        <li><a href="#">友情链接4</a></li>
+      </ul>
+    </div>
+  </section>
+  <!-- 社媒平台 -->
+  <section class="bg-white">
+    <div class="container mx-auto px-4 py-8">
+      <h2 class="text-2xl font-semibold mb-4">社媒平台</h2>
+      <div class="flex flex-wrap items-center justify-center">
+        <a href="https://weibo.com">
+          <img src="images/weibo.png" alt="微博" class="w-16 h-16 mr-8 mb-8">
+        </a>
+        <a href="https://zhihu.com">
+          <img src="images/zhihu.png" alt="知乎" class="w-16 h-16 mr-8 mb-8">
+        </a>
+        <a href="https://xiaohongshu.com">
+          <img src="images/xiaohongshu.png" alt="小红书" class="w-16 h-16 mr-8 mb-8">
+        </a>
+        <a href="https://bilibili.com">
+          <img src="images/bilibili.png" alt="B站" class="w-16 h-16 mb-8">
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- 版权声明 -->
+  <section class="bg-gray-900 text-white">
+    <div class="container mx-auto px-4 py-4">
+      <p class="text-gray-600 mb-2 sm:mb-0">© 2023 公司名字. All rights reserved.</p>
+    </div>
+  </section>
+</body>
+
+</html>

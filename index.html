@@ -14,9 +14,9 @@
       filter: brightness(0) invert(1)
     }
 
-    .header p {
+    /* .header p {
       font-size: 75px;
-    }
+    } */
 
     .img-rounded {
       -webkit-mask-image: radial-gradient(circle, white 100%, black 100%);
@@ -29,6 +29,13 @@
       background-repeat: no-repeat;
       background-size: cover;
     } */
+
+    /* 媒体查询 */
+    @media (min-width: 768px) {
+      .responsive-text {
+        font-size: 75px;
+      }
+    }
   </style>
 </head>
 
@@ -37,6 +44,7 @@
   <nav class="bg-gray-900 text-white">
     <div class="container mx-auto flex justify-between px-4 py-2">
       <div class="flex items-center">
+        <!-- 公司logo -->
         <img src="images/logo.png" alt="公司logo" class="w-12 h-auto logo">
         <h1 class="text-xl ml-4 font-semibold">公司名字</h1>
       </div>
@@ -50,14 +58,18 @@
   </nav>
   <!-- 公司愿景 -->
   <div class="header flex flex-col items-center justify-center relative">
-    <p
-      class="text-lg mb-2 font-bold absolute text-white top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1 whitespace-nowrap">
+    <!-- <p
+      class="text-lg md:text-xl mb-2 font-bold absolute text-white top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1 whitespace-nowrap">
       使用 boardmix AI 创建一个网站</br>
-    </p>
+    </p> -->
 
-    <img src="images/yuanjing.png" alt="公司愿景" class="w-full filter brightness-30" user-select="false">
+    <p
+      class="responsive-text text-base md:text-xl mb-2 font-bold absolute text-white top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1 whitespace-nowrap">
+      使用 boardmix AI 创建一个网站</p>
+
+    <!-- <img src="images/yuanjing.png" alt="公司愿景" class="w-full filter brightness-30" user-select="false"> -->
+    <img src="images/yuanjing.png" alt="公司愿景" class="w-full filter brightness-30" style="user-select: none;">
   </div>
-
 
   <!-- <div class="header flex flex-col items-center justify-center header-bg bg-green-600">
     <p class="text-lg mb-2 font-bold absolute text-white">

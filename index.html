@@ -36,6 +36,12 @@
         font-size: 75px;
       }
     }
+    
+    @media screen and (max-width: 640px) {
+      .navbar-title {
+        display: none;
+      }
+    }
   </style>
 </head>
 
@@ -46,7 +52,7 @@
       <div class="flex items-center">
         <!-- 公司logo -->
         <img src="images/logo.png" alt="公司logo" class="w-12 h-auto logo">
-        <h1 class="text-xl ml-4 font-semibold">公司名字</h1>
+        <h1 class="text-xl ml-4 font-semibold navbar-title">公司名字</h1>
       </div>
       <ul class="flex items-center">
         <li class="mr-6"><a href="#" class="hover:text-gray-400">首页</a></li>
@@ -116,37 +122,37 @@
     </div>
   </section>
   <!-- 团队介绍 -->
-  <section class="bg-gray-100">
+   <section class="bg-gray-100">
     <div class="container mx-auto px-4 py-8">
       <h2 class="text-2xl font-semibold mb-8">团队介绍</h2>
       <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <li>
+        <li class="flex flex-col items-center justify-center">
           <div class="w-64 h-64 relative">
             <img src="/images/team1.jpg" alt="团队成员1" class="mb-4 absolute w-full h-full object-cover rounded-full">
           </div>
           <h3 class="text-lg font-medium mt-10 mb-2">团队成员1</h3>
-          <p class="text-gray-600">这里是团队成员1的介绍，包括工作职责、专业领域等等。</p>
+          <p class="text-gray-600 mb-8">这里是团队成员1的介绍，包括工作职责、专业领域等等。</p>
         </li>
-        <li>
+        <li class="flex flex-col items-center justify-center">
           <div class="w-64 h-64 relative">
             <img src="/images/team2.jpg" alt="团队成员1" class="mb-4 absolute w-full h-full object-cover rounded-full">
           </div>
           <h3 class="text-lg font-medium mt-10 mb-2">团队成员2</h3>
-          <p class="text-gray-600">这里是团队成员2的介绍，包括工作职责、专业领域等等。</p>
+          <p class="text-gray-600 mb-8">这里是团队成员2的介绍，包括工作职责、专业领域等等。</p>
         </li>
-        <li>
+        <li class="flex flex-col items-center justify-center">
           <div class="w-64 h-64 relative">
             <img src="/images/team3.jpg" alt="团队成员1" class="mb-4 absolute w-full h-full object-cover rounded-full">
           </div>
           <h3 class="text-lg font-medium mt-10 mb-2">团队成员3</h3>
-          <p class="text-gray-600">这里是团队成员3的介绍，包括工作职责、专业领域等等。</p>
+          <p class="text-gray-600 mb-8">这里是团队成员3的介绍，包括工作职责、专业领域等等。</p>
         </li>
-        <li>
+        <li class="flex flex-col items-center justify-center">
           <div class="w-64 h-64 relative">
             <img src="/images/team4.jpg" alt="团队成员1" class="mb-4 absolute w-full h-full object-cover rounded-full">
           </div>
           <h3 class="text-lg font-medium mt-10 mb-2">团队成员4</h3>
-          <p class="text-gray-600">这里是团队成员4的介绍，包括工作职责、专业领域等等。</p>
+          <p class="text-gray-600 mb-8">这里是团队成员4的介绍，包括工作职责、专业领域等等。</p>
         </li>
       </ul>
     </div>

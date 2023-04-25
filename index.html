@@ -8,16 +8,6 @@
   <title>公司名字 - 首页</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css">
   <style>
-    /* 根据需要设置自定义样式 */
-    /* 把logo图标调整为白色 */
-    .logo {
-      filter: brightness(0) invert(1)
-    }
-
-    /* .header p {
-      font-size: 75px;
-    } */
-
     .img-rounded {
       -webkit-mask-image: radial-gradient(circle, white 100%, black 100%);
       mask-image: radial-gradient(circle, white 100%, black 100%);
@@ -36,9 +26,10 @@
         font-size: 75px;
       }
     }
-    
+
     @media screen and (max-width: 640px) {
       .navbar-title {
+        font-size: 1rem;
         display: none;
       }
     }
@@ -51,8 +42,8 @@
     <div class="container mx-auto flex justify-between px-4 py-2">
       <div class="flex items-center">
         <!-- 公司logo -->
-        <img src="images/logo.png" alt="公司logo" class="w-12 h-auto logo">
-        <h1 class="text-xl ml-4 font-semibold navbar-title">公司名字</h1>
+        <img src="images/logo.png" alt="公司logo" class="w-24 h-auto logo">
+        <h1 class="text-xl ml-4 font-semibold navbar-title">博思</h1>
       </div>
       <ul class="flex items-center">
         <li class="mr-6"><a href="#" class="hover:text-gray-400">首页</a></li>
@@ -62,7 +53,13 @@
       </ul>
     </div>
   </nav>
+
   <!-- 公司愿景 -->
+  <!-- <div class="header flex flex-col items-center justify-center">
+    <p class="text-lg text-gray-500 mb-2">公司愿景</p>
+    <img src="images/yuanjing.png" alt="公司愿景" class="w-full">
+  </div> -->
+
   <div class="header flex flex-col items-center justify-center relative">
     <!-- <p
       class="text-lg md:text-xl mb-2 font-bold absolute text-white top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1 whitespace-nowrap">
@@ -77,19 +74,45 @@
     <img src="images/yuanjing.png" alt="公司愿景" class="w-full filter brightness-30" style="user-select: none;">
   </div>
 
-  <!-- <div class="header flex flex-col items-center justify-center header-bg bg-green-600">
-    <p class="text-lg mb-2 font-bold absolute text-white">
-      公司愿景</p>
-  </div> -->
-
   <!-- 公司简介 -->
-  <section class="bg-gray-100">
+  <!-- <section class="bg-gray-100">
     <div class="container mx-auto px-4 py-8">
       <h2 class="text-2xl font-semibold mb-4">公司简介</h2>
       <div class="md:flex">
         <img src="images/company.jpg" alt="公司照片" class="md:w-1/2 md:pr-8 mb-4">
         <p class="md:w-1/2 leading-loose text-gray-600">
           这里是公司名字，我们专注于提供优质的服务，为客户创造最大的价值。我们有一支优秀的团队，能够为您提供最专业的解决方案。如有需要，请随时联系我们。</p>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+      <h2 class="text-3xl font-semibold mb-8 text-center">公司简介</h2>
+      <div class="md:flex mb-6 items-center">
+        <img src="images/company.jpg" alt="公司照片" class="md:w-1/2 md:pr-8 mb-4">
+        <div class="md:w-1/2 leading-loose text-gray-600">
+          <p>这里是公司名字，我们专注于提供优质的服务，为客户创造最大的价值。我们有一支优秀的团队，能够为您提供最专业的解决方案。如有需要，请随时联系我们。</p>
+          <h3 class="text-xl font-semibold mt-4">我们的使命</h3>
+          <p>我们的使命是成为行业领导者，通过创新和卓越服务，为客户提供最佳体验。</p>
+          <h3 class="text-xl font-semibold mt-4">我们的愿景</h3>
+          <p>我们的愿景是成为全球最受尊敬的企业之一，以卓越的品质、创新和客户满意度获得市场认可。</p>
+        </div>
+      </div>
+      <h3 class="text-xl font-semibold mb-4">我们的核心价值观</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-white rounded-md p-4">
+          <h4 class="font-semibold mb-2">客户至上</h4>
+          <p>我们始终以客户需求为导向，全心全意为客户创造价值。</p>
+        </div>
+        <div class="bg-white rounded-md p-4">
+          <h4 class="font-semibold mb-2">创新驱动</h4>
+          <p>我们致力于探索前沿技术，以不断优化产品和服务，为客户提供持续的竞争优势。</p>
+        </div>
+        <div class="bg-white rounded-md p-4">
+          <h4 class="font-semibold mb-2">团队精神</h4>
+          <p>我们重视团队合作，相互支持，共同发展，为实现公司愿景共同努力。</p>
+        </div>
       </div>
     </div>
   </section>
@@ -122,7 +145,7 @@
     </div>
   </section>
   <!-- 团队介绍 -->
-   <section class="bg-gray-100">
+  <section class="bg-gray-100">
     <div class="container mx-auto px-4 py-8">
       <h2 class="text-2xl font-semibold mb-8">团队介绍</h2>
       <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
